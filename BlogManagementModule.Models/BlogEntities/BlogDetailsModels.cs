@@ -16,7 +16,7 @@ namespace BlogManagementModule.Models.BlogEntities
     }
     public class BlogFileInformation : BasicIdentityRootModel<long>
     {
-        public virtual BlogAccounts BlogAccount { get; set; }
+        public virtual BlogAccount BlogAccount { get; set; }
         [Required]
         public virtual long BlogId { get; set; }
         [Required]
@@ -28,7 +28,7 @@ namespace BlogManagementModule.Models.BlogEntities
         [Required]
         public bool IsDeleted { get; set; } 
     }
-    public class BlogAccounts : FullIdentityRootModel <long>
+    public class BlogAccount : FullIdentityRootModel <long>
     {
         public virtual BlogCategories BlogCategory { get; set; }
         [Required]
