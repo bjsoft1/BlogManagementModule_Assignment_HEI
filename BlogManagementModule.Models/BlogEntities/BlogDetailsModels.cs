@@ -48,7 +48,7 @@ namespace BlogManagementModule.Models.BlogEntities
         // When `Admin` Add some date (like Current Date is `2023-05-15` PublishedDate is `2023-06-10`
         // this case client seen this blog after 25 days. this is auto publish after 25 days latter
         // This is for make automatic Publish after few times latter.
-        public DateTime PublishedDate { get; set; }
+        public DateTime? PublishedDate { get; set; }
         //-----------------------------------------
         //-----------------------------------------
         // When some blog need auto expiry some time letter then add date here.

@@ -145,14 +145,14 @@ namespace BlogManagementModule.Database
         {
             return new List<BlogAccount> 
             {
-                new BlogAccount { Id = 1, BlogCategoryId = 1,IsAllowPublicComment = true, BlogDescription = "Hello", BlogName = "Title1", BlogStatus = EBlogStatus.Published,CreatorId = 1, IsPublic = true},
-                new BlogAccount { Id = 2, BlogCategoryId = 1,IsAllowPublicComment = true, BlogDescription = "Hello", BlogName = "Title1", BlogStatus = EBlogStatus.Published,CreatorId = 1, IsPublic = true},
-                new BlogAccount { Id = 3, BlogCategoryId = 1,IsAllowPublicComment = true, BlogDescription = "Hello", BlogName = "Title1", BlogStatus = EBlogStatus.Published,CreatorId = 1, IsPublic = true},
-                new BlogAccount { Id = 4, BlogCategoryId = 1,IsAllowPublicComment = true, BlogDescription = "Hello", BlogName = "Title1", BlogStatus = EBlogStatus.Published,CreatorId = 1, IsPublic = true},
-                new BlogAccount { Id = 5, BlogCategoryId = 1,IsAllowPublicComment = true, BlogDescription = "Hello", BlogName = "Title1", BlogStatus = EBlogStatus.Published,CreatorId = 1, IsPublic = true},
-                new BlogAccount { Id = 6, BlogCategoryId = 1,IsAllowPublicComment = true, BlogDescription = "Hello", BlogName = "Title1", BlogStatus = EBlogStatus.Published,CreatorId = 1, IsPublic = true},
-                new BlogAccount { Id = 7, BlogCategoryId = 1,IsAllowPublicComment = true, BlogDescription = "Hello", BlogName = "Title1", BlogStatus = EBlogStatus.Published,CreatorId = 1, IsPublic = true},
-                new BlogAccount { Id = 8, BlogCategoryId = 1,IsAllowPublicComment = true, BlogDescription = "Hello", BlogName = "Title1", BlogStatus = EBlogStatus.Published,CreatorId = 1, IsPublic = true},
+                new BlogAccount { Id = 1, BlogCategoryId = 1,IsAllowPublicComment = true, BlogDescription = "Hello1", BlogName = "Title1", BlogStatus = EBlogStatus.Published,CreatorId = 1, IsPublic = true, CreationTime = defaultDateTime},
+                new BlogAccount { Id = 2, BlogCategoryId = 1,IsAllowPublicComment = true, BlogDescription = "Hello2", BlogName = "Title2", BlogStatus = EBlogStatus.Published,CreatorId = 1, IsPublic = true, CreationTime = defaultDateTime},
+                new BlogAccount { Id = 3, BlogCategoryId = 1,IsAllowPublicComment = true, BlogDescription = "Hello3", BlogName = "Title3", BlogStatus = EBlogStatus.Published,CreatorId = 1, IsPublic = true, CreationTime = defaultDateTime},
+                new BlogAccount { Id = 4, BlogCategoryId = 1,IsAllowPublicComment = true, BlogDescription = "Hello4", BlogName = "Title4", BlogStatus = EBlogStatus.Published,CreatorId = 1, IsPublic = true, CreationTime = defaultDateTime},
+                new BlogAccount { Id = 5, BlogCategoryId = 1,IsAllowPublicComment = true, BlogDescription = "Hello5", BlogName = "Title5", BlogStatus = EBlogStatus.Published,CreatorId = 1, IsPublic = true, CreationTime = defaultDateTime},
+                new BlogAccount { Id = 6, BlogCategoryId = 1,IsAllowPublicComment = true, BlogDescription = "Hello6", BlogName = "Title6", BlogStatus = EBlogStatus.Published,CreatorId = 1, IsPublic = true, CreationTime = defaultDateTime},
+                new BlogAccount { Id = 7, BlogCategoryId = 1,IsAllowPublicComment = true, BlogDescription = "Hello7", BlogName = "Title7", BlogStatus = EBlogStatus.Published,CreatorId = 1, IsPublic = true, CreationTime = defaultDateTime},
+                new BlogAccount { Id = 8, BlogCategoryId = 1,IsAllowPublicComment = true, BlogDescription = "Hello8", BlogName = "Title8", BlogStatus = EBlogStatus.Published,CreatorId = 1, IsPublic = true, CreationTime = defaultDateTime},
             };
         }
     }

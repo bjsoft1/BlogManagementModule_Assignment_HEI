@@ -18,12 +18,12 @@ namespace BlogManagementModule.Models.SystemModels
         [Required, Column(TypeName = "bigint")]
         public virtual long CreatorId { get; set; }
         public virtual UserAccounts Creator { get; set; }
-        [Required]
+        [Required, Column(TypeName = "timestamp without time zone")]
         public virtual DateTime? CreationTime { get; set; }
     }
     public class BasicRootModel<Identity> : EntityModel<Identity>
     {
-        [Required]
+        [Required, Column(TypeName = "timestamp without time zone")]
         public virtual DateTime? CreationTime { get; set; }
         [Required, Column(TypeName = "bigint")]
         public virtual long CreatorId { get; set; }
@@ -37,6 +37,7 @@ namespace BlogManagementModule.Models.SystemModels
         public virtual UserAccounts Deletor { get; set; }
         [Required]
         public bool IsDelete { get; set; }
+        [Column(TypeName = "timestamp without time zone")]
         public virtual DateTime? LastModificationTime { get; set; }
         [Column(TypeName = "bigint")]
         public virtual long? LastModifiedId { get; set; }
@@ -44,12 +45,14 @@ namespace BlogManagementModule.Models.SystemModels
     }
     public class FullRootModel<Identity> : BasicRootModel<Identity>
     {
-        public virtual long? DeleteTime { get; set; }
+        [Column(TypeName = "timestamp without time zone")]
+        public virtual DateTime? DeleteTime { get; set; }
         [Column(TypeName = "bigint")]
         public virtual long? DeletorId { get; set; }
         public virtual UserAccounts Deletor { get;}
         [Required]
         public bool IsDelete { get; set; }
+        [Column(TypeName = "timestamp without time zone")]
         public virtual DateTime? LastModificationTime { get; set; }
         [Column(TypeName = "bigint")]
         public virtual long? LastModifiedId { get; set; }
@@ -57,13 +60,15 @@ namespace BlogManagementModule.Models.SystemModels
     }
     public class RootIdentityModelWithoutCreator<Identity> : EntityIdentityModel<Identity>
     {
-        [Required]
+        [Required, Column(TypeName = "timestamp without time zone")]
         public virtual DateTime? CreationTime { get; set; }
+        [Column(TypeName = "timestamp without time zone")]
         public virtual DateTime? LastModificationTime { get; set; }
         [Column(TypeName = "bigint")]
         public virtual long? LastModifiedId { get; set; }
         public virtual UserAccounts LastModified { get; set; }
-        public virtual long? DeleteTime { get; set; }
+        [Column(TypeName = "timestamp without time zone")]
+        public virtual DateTime? DeleteTime { get; set; }
         [Column(TypeName = "bigint")]
         public virtual long? DeletorId { get; set; }
         public virtual UserAccounts Deletor { get;}
