@@ -10,4 +10,8 @@
     <Folder Include="SystemModels\" />
   </ItemGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\BlogManagementModule.Constants\BlogManagementModule.Constants.csproj" />
+  </ItemGroup>
+
 </Project>

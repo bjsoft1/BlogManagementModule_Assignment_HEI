@@ -1,4 +1,5 @@
-﻿using BlogManagementModule.Models.SystemModels;
+﻿using BlogManagementModule.Constants.EnumClass;
+using BlogManagementModule.Models.SystemModels;
 using System.ComponentModel.DataAnnotations;
 using System.Diagnostics.CodeAnalysis;
 
@@ -76,11 +77,5 @@ namespace BlogManagementModule.Models.BlogEntities
         // sent request by `Admin, User, Guest` then we allow count only `Guest or User` 
         // Admin Count not allow but add for save history 
         public bool IsPublicUser { get; set; }  
-    }
-    public enum EBlogStatus
-    {
-        Published,
-        Pending,
-        Inactive,
     }
 }

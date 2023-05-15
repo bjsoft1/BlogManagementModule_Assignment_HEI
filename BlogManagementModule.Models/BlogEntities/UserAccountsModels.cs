@@ -1,4 +1,5 @@
-﻿using BlogManagementModule.Models.SystemModels;
+﻿using BlogManagementModule.Constants.EnumClass;
+using BlogManagementModule.Models.SystemModels;
 using System.ComponentModel;
 using System.ComponentModel.DataAnnotations;
 
@@ -27,15 +28,5 @@ namespace BlogManagementModule.Models
     public class UserGrandPermission : BasicIdentityRootModel<int>
     {
         // TODO:
-    }
-    public enum EUserRoles
-    {
-        [Display(Name = "Admin")]
-        Administrator = 1,
-        [Display(Name = "User")]
-        User = 2,
-        [Display(Name = "Guest")]
-        Guest = 3,
-        // ... So on
     }
 }
