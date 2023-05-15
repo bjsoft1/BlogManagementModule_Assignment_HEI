@@ -14,8 +14,12 @@ namespace BlogManagementModule.Models.BlogEntities
         [Required]
         public bool IsActive { get; set; }
     }
-    public class BlogFileInformation : BasicIdentityRootModel<long>
+    public class BlogFileInformation : FullIdentityRootModel<long>
     {
+        // TODO: File Information Type
+        // TODO: File Information Group
+        // TODO: File Permission
+        // TODO: File Allow Extention & File Size Limit
         public virtual BlogAccount BlogAccount { get; set; }
         [Required]
         public virtual long BlogId { get; set; }
@@ -64,8 +68,10 @@ namespace BlogManagementModule.Models.BlogEntities
     }
     public class BlogComments : FullIdentityRootModel<long>
     {
+        public virtual BlogAccount BlogAccount { get; set; }
+        [Required]
+        public long BlogId { get; set; }
         public string Comment { get; set; }
-        public bool IsDeleted { get; set; }
         //-----------------------------------------
         // This only used by `admin` (when comes bad comments or why delete this comment)
         // This is hidden only seen by `admin`
@@ -76,6 +82,9 @@ namespace BlogManagementModule.Models.BlogEntities
     {
         // sent request by `Admin, User, Guest` then we allow count only `Guest or User` 
         // Admin Count not allow but add for save history 
-        public bool IsPublicUser { get; set; }  
+        public bool IsPublicUser { get; set; }
+        public virtual BlogAccount BlogAccount { get; set; }
+        [Required]
+        public virtual long BlogId { get; set; }
     }
 }

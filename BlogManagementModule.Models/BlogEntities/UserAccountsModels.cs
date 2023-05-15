@@ -10,7 +10,7 @@ namespace BlogManagementModule.Models
     //    [Required,MinLength(3), MaxLength(20)]
     //    public string RoleName { get; set; }
     //}
-    public class UserAccounts : FullIdentityRootModel<long>
+    public class UserAccounts : RootIdentityModelWithoutCreator<long>
     {
         public EUserRoles Roles { get; set; }
         [Required,MinLength(6), MaxLength(30)]
