@@ -3,13 +3,13 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.5.33424.131
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BlogManagementModule", "BlogManagementModule\BlogManagementModule.csproj", "{D39144B2-BB9B-49F5-8D32-73CA81C1FC6B}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BlogManagementModule", "BlogManagementModule\BlogManagementModule.csproj", "{D39144B2-BB9B-49F5-8D32-73CA81C1FC6B}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BlogManagementModule.Models", "BlogManagementModule.Models\BlogManagementModule.Models.csproj", "{34D0B9F7-4C84-49DF-AED8-9B804597A605}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BlogManagementModule.Models", "BlogManagementModule.Models\BlogManagementModule.Models.csproj", "{34D0B9F7-4C84-49DF-AED8-9B804597A605}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BlogManagementModule.Constants", "BlogManagementModule.Constants\BlogManagementModule.Constants.csproj", "{AF9AF9AD-2EBE-4E71-B958-94890C1768B1}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BlogManagementModule.Constants", "BlogManagementModule.Constants\BlogManagementModule.Constants.csproj", "{AF9AF9AD-2EBE-4E71-B958-94890C1768B1}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BlogManagementModule.Services", "BlogManagementModule.Services\BlogManagementModule.Services.csproj", "{C6CAF1CE-A005-4FEF-850A-441F284BEAAF}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BlogManagementModule.Services", "BlogManagementModule.Services\BlogManagementModule.Services.csproj", "{C6CAF1CE-A005-4FEF-850A-441F284BEAAF}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

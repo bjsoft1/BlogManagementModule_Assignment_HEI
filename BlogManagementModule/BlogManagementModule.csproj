@@ -18,4 +18,8 @@
     <ProjectReference Include="..\BlogManagementModule.Services\BlogManagementModule.Services.csproj" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Folder Include="Pages\Client\" />
+  </ItemGroup>
+
 </Project>
